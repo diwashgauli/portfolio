@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Resume</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+      overflow-x: hidden;
+      line-height: 1.6;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2.5rem 3rem 3rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      animation: floatUp 1s ease forwards;
+      opacity: 0;
+    }
+    @keyframes floatUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 3.25rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      color: #222;
+      text-align: center;
+      letter-spacing: 1.2px;
+      user-select: none;
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+      color: #444;
+      line-height: 1.5;
+      user-select: text;
+    }
+    .contact-info a {
+      font-weight: 600;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-info a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .github-button {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background-color: #24292e;
+      color: #fff;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .github-button:hover {
+      background-color: #0366d6;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 2.8rem 0 1rem;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 0.4rem;
+      color: #007bff;
+      user-select: none;
+    }
+
+    p, ul {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 1.25rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .section-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: #343a40;
+      user-select: none;
+    }
+
+    a {
+      color: #007bff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 3rem auto 0 auto;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 0.85rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,123,255,0.3);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      text-align: center;
+      width: max-content;
+    }
+    .back-btn:hover {
+      background-color: #0056b3;
+      box-shadow: 0 8px 20px rgba(0,86,179,0.4);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Diwas Gauli</h1>
+
+    <div class="contact-info" aria-label="Contact Information">
+      Koteshwar, Kathmandu <br />
+      <a href="tel:9863426971" aria-label="Phone Number">9863426971</a> | 
+      <a href="mailto:gaulidiwas@gmail.com" aria-label="Email Address">gaulidiwas@gmail.com</a> <br />
+      <a class="github-button" href="https://github.com/diwashgauli" target="_blank" rel="noopener noreferrer">Visit My GitHub</a>
+    </div>
+
+    <h2>Profile Summary</h2>
+    <p>
+      I am an aspiring software developer with a strong passion for backend and web development.
+      I began my journey by building <strong>BookNook</strong>, a book selling and exchange platform developed using Node.js and MySQL as part of a college project.
+      This experience gave me a solid foundation in server-side development and database management.
+    </p>
+    <p>
+      Currently, I am advancing my skills in Python and Django at Broadway Infosys, where I’ve
+      learned everything from basic to advanced Python concepts and am now actively exploring Django.
+      Alongside my training, I’ve independently built several projects, including a Student Management System, a Blog Platform, an Encrypted Password Manager, and a Web Scraping & Data Export Tool.
+    </p>
+    <p>
+      I am now seeking an internship opportunity where I can apply my skills in a real-world
+      environment, learn from experienced developers, and contribute to impactful projects.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Programming Languages:</strong> Python</li>
+      <li><strong>Frameworks:</strong> Django</li>
+      <li><strong>Database Management:</strong> SQLite</li>
+      <li><strong>Tools & Platforms:</strong> Git, GitHub</li>
+      <li><strong>Web Development Basics:</strong> HTML, CSS, JavaScript (basic)</li>
+    </ul>
+
+    <h2>Projects</h2>
+
+    <section aria-labelledby="sms-title">
+      <p id="sms-title" class="section-title">Student Management System</p>
+      <p>A command-line-based project using Python and SQLite to manage student records.</p>
+      <ul>
+        <li>Built using modular code structure across multiple Python files</li>
+        <li>CRUD operations with SQLite for storing and retrieving student data</li>
+        <li>Includes data validation and user-friendly CLI interaction</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="blog-title">
+      <p id="blog-title" class="section-title">Blog Platform (CLI-Based)</p>
+      <p>A basic blog system built with SQLite backend.</p>
+      <ul>
+        <li>Allows adding, updating, and deleting blog posts</li>
+        <li>Categorizes posts and stores metadata like timestamps</li>
+        <li>Prepares you for moving this concept to a Django web app</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="epm-title">
+      <p id="epm-title" class="section-title">Encrypted Password Manager</p>
+      <p>A secure password manager CLI app built in Python.</p>
+      <ul>
+        <li>Encrypts passwords before saving them locally</li>
+        <li>Uses base64 and hashing techniques for safety</li>
+        <li>Allows storing, updating, and deleting credentials</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="ws-title">
+      <p id="ws-title" class="section-title">Web Scraping and Data Export Tool</p>
+      <p>A Python-based tool that scrapes data from websites and exports to SQLite and JSON/CSV.</p>
+      <ul>
+        <li>Uses <code>requests</code>, <code>BeautifulSoup</code>, and <code>sqlite3</code></li>
+        <li>Stores scraped data in a structured SQLite database</li>
+        <li>Exports results to JSON and CSV for further use</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="booknook-title">
+      <p id="booknook-title" class="section-title">BookNook – Book Selling &amp; Exchanging Marketplace</p>
+      <p>
+        <a class="github-button" href="https://github.com/diwashgauli/BookNook---Minor-Project" target="_blank" rel="noopener noreferrer">View BookNook on GitHub</a>
+      </p>
+      <ul>
+        <li>Developed with Node.js and MySQL in a team setting</li>
+        <li>Features include user registration, login authentication, and book upload</li>
+        <li>Designed database schema for efficient book listings and user data management</li>
+      </ul>
+    </section>
+
+    <h2>Education</h2>
+    <p><strong>NCIT, Balkumari, Lalitpur</strong></p>
+    <p>Bachelor's in Computer Engineering (BECE)</p>
+    <p>2019 – 2024 (Expected)</p>
+
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Problem-Solving</li>
+      <li>Team Collaboration</li>
+      <li>Communication Skills</li>
+      <li>Time Management</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul>
+      <li>English</li>
+      <li>Nepali</li>
+    </ul>
+
+    <h2>Download Resume</h2>
+    <p><a href="files/Diwas_Gauli_Resume.pdf" target="_blank" download>Click here to download my full resume (PDF)</a></p>
+
+    <button class="back-btn" onclick="goBack()" aria-label="Back to Home">← Back to Home</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

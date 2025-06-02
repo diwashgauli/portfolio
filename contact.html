@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Diwas Gauli</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #007bff;
+      text-align: center;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #495057;
+    }
+    .contact-info {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #212529;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    button.back-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 0.75rem 2rem;
+      background-color: #343a40;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: opacity 0.3s ease;
+    }
+    button.back-btn:hover {
+      opacity: 0.8;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out to me through any of the following methods:</p>
+    <div class="contact-info">
+      <p>📍 Koteshwar, Kathmandu</p>
+      <p>📞 <a href="tel:9863426971">9863426971</a></p>
+      <p>📧 <a href="mailto:gaulidiwas@gmail.com">gaulidiwas@gmail.com</a></p>
+      <p>🌐 <a href="https://github.com/diwashgauli" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/diwash-gauli-27b067364/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+    </div>
+
+    <button class="back-btn" onclick="goBack()">← Back to Home</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
